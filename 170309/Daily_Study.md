@@ -106,3 +106,21 @@ ex)
 	document.body.removeChild( document.body.children[3]);
 
 ```
+> insertBefore:
+	
+	about the code below, look at the example:
+    "ParentNode.insertBefore("span", "childNode")"
+    
+    ex)
+    <div id="father">
+    	<span id="son">child1</span>
+    </div>
+    
+    <script>
+    var ParentNode = document.getElementById("father");
+    var childNode = document.getElementById("son");
+    
+    //then you can use the code below
+    
+    ParentNode.insertBefore("span", "childNode");
+    
