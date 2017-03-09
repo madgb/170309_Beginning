@@ -29,7 +29,7 @@
 
 ---
 >
-An attempt to retrieve Eurydice
+* An attempt to retrieve Eurydice
 
 
 
