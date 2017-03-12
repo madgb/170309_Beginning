@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax</title>
+	<script>
+		var req = new XMLHttpRequest();
+		//tell the readystate as the state changes
+		//tell the status as the status changes (ok === 200)
+		req.onreadystatechange = function a(){
+			console.log(this.readyState, this.status);
+			if( this.readyState === 4 && this.status === 200 ){
+				console.log(this.response);
+			}
+		}
+		req.open("GET","http://google.com/");
+		req.send();
+		//req.request <-- call the data, need eventHandler
+
+	</script>
+</head>
+<body>
+	AJAX
+</body>
+</html>
