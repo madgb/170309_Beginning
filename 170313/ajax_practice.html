@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax</title>
+	<script>
+		var req = new XMLHttpRequest();
+		//tell the readystate as the state changes
+		//tell the status as the status changes (ok === 200)
+		req.onreadystatechange = function a(){
+			console.log(this.readyState, this.status);
+			if( this.readyState === 4 && this.status === 200 ){
+				console.log(this.response);
+				var data = JSON.parse(this.response);
+				for( var i in data ){
+					var t = document.getElementById("template").cloneNode(true);
+					t.removeAttribute("id");
+					t.children[0].innerText = data[i].id;
+					t.children[1].innerText = data[i].msg;
+					document.body.appendChild(t);
+				}
+			}
+		}
+		req.open("GET","./json_data.txt");
+		req.send();
+		//req.request <-- call the data, need eventHandler
+
+	</script>
+</head>
+<body>
+	<p id="template">
+		<span class="id">아이디 </span> : <span class="word"> 대사 </span>
+	</p>
+</body>
+</html>
