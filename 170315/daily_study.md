@@ -3,6 +3,7 @@
 
 ### Javascript Study_ with "viking"_02
 
+* 1. 
 ```
 function shuffleArray(array) {
 
@@ -29,4 +30,41 @@ function shuffleArray(array) {
 >>Since: Math.floor(1.92) = 2
 2. when the new i born, the very shuffle start
 >>Since the code below switch places between two
+```
+
+*2. The "return"
+```
+// without 'return'
+function oops() {
+  "bar";
+}
+
+oops();
+//=> undefined
+
+// with 'return'
+function foo(){
+  return "bar";
+}
+
+foo();      
+//=> "bar"
+```
+>plus
+```
+function foo(){
+  return function() {
+    return "flubber";
+  }
+}
+
+// inspect the returned function
+foo();
+//=>  function() {
+        console.log("flubber")
+      }
+
+// run the returned function in one go
+foo()();
+//=> "flubber"
 ```
