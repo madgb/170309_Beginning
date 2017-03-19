@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+
+
+/*font*/
+.nav-left, .nav-right, .main-second, .footer-container{
+	font-family: 'Nanum Gothic', serif;
+}
+
+.type-14{
+	font-size: 14px;
+}
+.bold{
+	font-weight: bold;
+}
+
 a {
 	text-decoration: none;
-	color: black;
 }
 
 a:hover, a:visited, a:focus{
@@ -12,6 +26,7 @@ a:hover, a:visited, a:focus{
 ul, li{
 	text-decoration: none;
 	list-style: none;
+	padding: 0;
 }
 
 .site-nav-container{
@@ -30,7 +45,7 @@ ul, li{
 }
 
 .upper-nav a{
-	margin-left: 50px;
+	margin-left: 45px;
 }
 
 .explore-wrapper > a{
@@ -107,7 +122,7 @@ footer{
 }
 
 .footer-content{
-	padding: 3rem;
+	padding: 3rem 4.5rem;
 }
 .footer-upper{
 	padding-bottom: 3rem;
@@ -116,4 +131,7 @@ footer{
 	border-top: 1px solid #353535;
 	padding: 3rem 0;
 	height: 100px;
+}
+.gridbelow, .gridbelow a{
+	color: #FFF;
 }
