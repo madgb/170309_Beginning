@@ -5,4 +5,10 @@
     .nav-left > a{
     	display: none;
     }
+    .carousel-item{
+    	height: 400px;
+    }
+    .IBKlogo-container{
+	float: right;
+}
 }

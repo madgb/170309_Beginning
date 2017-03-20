@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+
+/*font*/
+.nav-left, .nav-right, .main-second, .footer-container{
+	font-family: sans-serif;
+}
+
+p{
+	margin-bottom: 0;
+}
+
+.type-14{
+	font-size: 14px;
+}
+.copyright{
+	font-family: sans-serif;
+	font-size: 10px;
+	color: #bdbdbd;
+}
+
+.footer-logo{
+	font-family: 'Baloo Bhaina', cursive;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover, a:visited, a:focus{
+	text-decoration: none;
+	color: inherit;
+}
+
+ul, li{
+	text-decoration: none;
+	list-style: none;
+	padding: 0;
+}
+
+/*navigation*/
+.site-nav-container a{
+	color: black;
+}
+.site-nav-container{
+	width: 100%;
+	border-bottom: 1px solid #DCDEDD;
+    height: 65px;
+    position: relative;
+    bottom: -7px;
+}
+.upper-nav{
+	display: inline-block;
+	float: left;
+	padding: 20px;
+	width: 33%;
+	line-height: 29px;
+}
+
+.upper-nav a{
+	margin-left: 25px;
+}
+
+.explore-wrapper > a{
+	margin-left: 0;
+}
+
+.explore-logo{
+	background-image: url(image/compass.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 25px;
+    height: 25px;
+    float: left;
+}
+
+.nav-right a{
+	float: right;
+}
+
+.fa-search:hover{
+	color: #B4B6C6;
+}
+
+.nav-middle{
+	text-align: center;
+	font-family: 'Baloo Bhaina', cursive;
+}
+
+.nav-middle a{
+	margin-left: 0;
+}
+
+.IBKlogo-container{
+	float: left;
+}
+.IBKlogo{
+	background-image: url(image/IBKlogo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100px;
+	height: 22px;
+	float: left;
+}
+
+.korea-font{
+	float: left;
+	margin-right: 10px;
+	font-family: -webkit-pictograph;
+}
+
+/*carousel*/
+
+.carousel-inner img{
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logoman{
+	font-size: 25px;
+}
+
+.green-word-in-logo{
+	color: #2BDE73;
+}
+
+.korea-font, .korea{
+	color: #6B6B6B;
+	font-size: 12px;
+}
+
+.korea{
+	text-transform: uppercase;
+    padding-left: 5px;
+}
+
+/*maincontetn*/
+.main-second-container{
+	padding: 3rem 4.5rem;
+}
+
+.second-main-section{
+	margin-bottom: 100px;
+}
+
+.second-main-row{
+	width: 100%;
+	height: 37px;
+	padding: 0 30px;
+}
+.second-main-row-title{
+	font-size: 25px;
+	float: left;
+}
+.second-main-row-button{
+	width: 60px;
+    height: 37px;
+    line-height: 37px;
+	font-size: 13px;
+	float: right;
+	border: 1px solid #B4B6C6;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.section-container{
+	text-align: center;
+}
+
+.second-main-section-card{
+	width: 325px;
+	height: 440px;
+	border: 1px solid #B4B6C6;
+	border-radius: 3px;
+	padding: 0 20px;
+	margin: 20px;
+	position: relative;
+	display: inline-block;
+	text-align: left;
+}
+
+.second-main-section-card-upper{
+	background-size: cover;
+	background-position: center center;
+	width: 285px;
+	height: 100px;
+}
+
+/*upper img section*/
+.second-main-upper1{
+	background-image: url(https://cprmusiq.github.io/images/cprmusiq3.png);
+}
+.second-main-upper2{
+	background-image: url(https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAALQAAAAJDY4ODE0YjFiLTJhNzctNDE0My1iN2E2LTFiMjI4MDUwZTdiMQ.jpg);
+}
+.second-main-upper3{
+	background-image: url(http://barcodedc.com/wp-content/gallery/food/healthfitnessrevolution-com.jpg);
+}
+
+
+.second-main-section-card-mid-title{
+	padding: 10px 0;
+}
+
+.second-main-section-card-mid-content{
+	font-size: 12px;
+}
+
+.second-main-section-card-footer{
+	position: absolute;
+    bottom: 10px;
+    width: 285px;
+}
+
+.second-main-section-card-footer-location{
+	padding-top: 10px;
+}
+
+.second-main-section-card-footer-graph{
+	position: relative;
+	padding: 10px 0;
+}
+
+.graph-100{
+	position: absolute;
+	width: 100%;
+	background-color: #B4B6C6;
+    border-radius: 6px;
+    height: 6px;
+}
+
+.graph-filled{
+	position: absolute;
+	width: 76%;
+	background-color: #45C63F;
+    border-radius: 6px;
+    height: 6px;
+}
+
+.card-footer-contents > div{
+	float: left;
+	margin: 10px 20px 0 0;
+}
+
+/*mainconternt2*/
+.main-second-container{
+	padding: 3rem;
+}
+
+/*footer*/
+footer{
+	position: relative;
+}
+.footer-container{
+	background-color: #020621;
+	color: #fff;
+	width: 100%;
+}
+
+.footer-content{
+	padding: 3rem 4.5rem;
+}
+.footer-upper{
+	padding-bottom: 3rem;
+}
+.footer-bottom{
+	border-top: 1px solid #353535;
+	padding: 3rem 0;
+	height: 100px;
+}
+.gridbelow, .gridbelow a{
+	color: #FFF;
+}
