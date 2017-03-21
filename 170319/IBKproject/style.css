@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
 @import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
 
+/*clearfix*/
+.clearfix::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
 /*font*/
 .nav-left, .nav-right, .main-second, .footer-container{
 	font-family: sans-serif;
