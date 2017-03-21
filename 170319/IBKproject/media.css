@@ -10,5 +10,55 @@
     }
     .IBKlogo-container{
 	float: right;
+	}
 }
+
+@media screen and (max-width: 450px){
+	.main-second-container{
+		padding: 3rem 0 0 0;
+	}
+	.site-nav-base{
+		display: none;
+	}
+	.mobile-nav-left, .mobile-nav-right{
+		width: 50%;
+		float: left;
+		padding: 5px 20px;
+	}
+	.mobile-nav-right{
+		text-align: right;
+	}
+	.site-nav-container{
+		bottom: 0;
+		height: 100px;
+	}
+	.mobile-nav{
+		width: 100%;
+		padding: 8px 0px;
+	}
+	.site-nav-mobile-logo{
+		text-align: center;
+		border-bottom: 1px solid #DCDEDD;
+    	height: 50px;
+    	line-height: 57px;
+	}
+	.site-nav-mobile-logo a{
+		margin-left: 25px;
+	}
+
+	/*carousel width*/
+	.carousel-item{
+    	height: 250px;
+    }
+}
+
+@media screen and (min-width: 451px){
+	.site-nav-mobile{
+		display: none;
+	}
+}
+
+/*mobileNav*/
+.site-nave-mobile-logo{
+	text-align: center;
 }
