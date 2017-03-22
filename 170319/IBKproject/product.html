@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
- 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,6 +18,7 @@
     <link rel="stylesheet" href="font/font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="productStyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="graph.css">
     <link rel="stylesheet" href="media.css">
 </head>
 
@@ -95,6 +95,42 @@
                     <button class="fundit">투자하기</button>
                     <button class="favorite-fund"><span class="fa fa-star" aria-hidden="true"></span> 즐겨찾기</button>
                     <button class="share-fund"><span class="fa fa-share" aria-hidden="true"></span> 공유하기</button>
+                </div>
+            </div>
+        </div>
+        <div class="under-wrap clearfix">
+            <div class="graph-wrap clearfix">
+                <div class="product-graph clearfix">
+                    <div id="chart">
+                        <ul id="numbers">
+                            <li><span>100%</span></li>
+                            <li><span>90%</span></li>
+                            <li><span>80%</span></li>
+                            <li><span>70%</span></li>
+                            <li><span>60%</span></li>
+                            <li><span>50%</span></li>
+                            <li><span>40%</span></li>
+                            <li><span>30%</span></li>
+                            <li><span>20%</span></li>
+                            <li><span>10%</span></li>
+                            <li><span>0%</span></li>
+                        </ul>
+                        <ul id="bars">
+                            <li>
+                                <div data-percentage=100 class="bar"></div><span>달성률</span></li>
+                            <li>
+                                <div data-percentage="33" class="bar"></div><span>투자자 추이</span></li>
+                            <li>
+                                <div data-percentage="54" class="bar"></div><span>고액투자 비율</span></li>
+                            <li>
+                                <div data-percentage="15" class="bar"></div><span>일일달성률</span></li>
+                            <li>
+                                <div data-percentage="44" class="bar"></div><span>월달성률</span></li>
+                            <li>
+                                <div data-percentage="23" class="bar"></div><span>공유된비율</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -188,8 +224,11 @@
         </div>
     </footer>
     <script type="text/javascript" src="jquery-3.1.0.slim.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script type="text/javascript" src="bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="graph.js"></script>
 </body>
 
 </html>
