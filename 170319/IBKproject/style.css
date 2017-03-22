@@ -283,3 +283,9 @@ footer{
 .gridbelow, .gridbelow a{
 	color: #FFF;
 }
+
+/*flex-helper*/
+.flex-wrapper{
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+}
