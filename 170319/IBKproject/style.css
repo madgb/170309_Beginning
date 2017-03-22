@@ -117,7 +117,7 @@ ul, li{
 .korea-font{
 	float: left;
 	margin-right: 10px;
-	font-family: -webkit-pictograph;
+	font-family: sans-serif, -webkit-pictograph;
 }
 
 /*carousel*/
@@ -286,6 +286,6 @@ footer{
 
 /*flex-helper*/
 .flex-wrapper{
-  -webkit-flex: 1 1 50%;
-  flex: 1 1 50%;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
