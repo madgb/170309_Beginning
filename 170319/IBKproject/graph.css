@@ -1,75 +1,36 @@
-#chart {
-  width: 650px;
-  height: 300px;
-  margin: 30px auto 0;
-  display: block;
+#chart{
+  position:relative;
+  margin-top:40px;
+  width:500px;
+  height:200px;
 }
-#chart #numbers {
-  width: 50px;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  float: left;
+@-webkit-keyframes bargrowth{
+  0%   {max-height: 0%;}
+  100%  {max-height: 100%;}
 }
-#chart #numbers li {
-  text-align: right;
-  padding-right: 1em;
-  list-style: none;
-  height: 29px;
-  border-bottom: 1px solid black;
-  position: relative;
-  bottom: 30px;
+@keyframes bargrowth{
+  0%   {max-height: 0%;}
+  100%  {max-height: 100%;}
 }
-#chart #numbers li:last-child {
-  height: 30px;
+.bar{
+  -webkit-animation: bargrowth 1000ms ease;
+  animation: bargrowth 1000ms ease;
+  position:absolute;
+  bottom:0;
+  display:inline-block;
+  background: #89b800;
+  box-shadow: 1px -1px #79a300, 2px -2px #79a300, 3px -3px #79a300,   4px -4px #79a300, 5px -5px #79a300, 6px -6px #79a300, 7px -7px   #79a300, 8px -8px #79a300, 9px -9px #79a300, 10px -10px #79a300;
 }
-#chart #numbers li span {
-  color: black;
-  position: absolute;
-  bottom: 0;
-  right: 10px;
+
+
+.wrapper{
+  text-align:center;
+  margin:0 auto;
+  margin-top:30px;
+  width:500px;
+  font-family:Helvetica;
+  font-size:12px;
 }
-#chart #bars {
-  display: inline-block;
-  background: #FFF;
-  width: 600px;
-  height: 300px;
-  padding: 0;
-  margin: 0;
-  box-shadow: 0 0 0 1px #444;
-}
-#chart #bars li {
-  display: table-cell;
-  width: 100px;
-  height: 300px;
-  margin: 0;
-  text-align: center;
-  position: relative;
-}
-#chart #bars li .bar {
-  display: block;
-  width: 70px;
-  margin-left: 15px;
-  background: #45C63F;
-  position: absolute;
-  bottom: 0;
-}
-#chart #bars li .bar:hover {
-  background: #5AE;
-  cursor: pointer;
-}
-#chart #bars li .bar:hover:before {
-  color: #000;
-  content: attr(data-percentage) '%';
-  position: relative;
-  bottom: 20px;
-}
-#chart #bars li span {
-  color: #000;
-  width: 100%;
-  position: absolute;
-  bottom: -2em;
-  left: 0;
-  text-align: center;
+.wrapper > h1, .wrapper > p{
+  margin:0;
 }

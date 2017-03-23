@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
- 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -17,7 +16,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="font/font-awesome-4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="media.css">
 </head>
 
@@ -26,9 +25,9 @@
         <nav class="site-nav-base">
             <div class="nav-left upper-nav">
                 <span class="explore-wrapper">
-					<div class="explore-logo"></div>
-					<a href="product.html">투자하기</a>	
-				</span>
+                    <div class="explore-logo"></div>
+                    <a href="product.html">투자하기</a> 
+                </span>
                 <a href="#">프로젝트 시작하기</a>
                 <a href="#">더 보기</a>
             </div>
@@ -40,8 +39,8 @@
                 <a href="#">로그인</a>
                 <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                 <div class="IBKlogo-container">
-                <div class="korea-font">powered by</div>
-                <div class="IBKlogo"></div>
+                    <div class="korea-font">powered by</div>
+                    <div class="IBKlogo"></div>
                 </div>
             </div>
         </nav>
@@ -50,39 +49,41 @@
                 <a href="#"><span class="logoman">KICK</span><span class="green-word-in-logo logoman">STARTER</span><span class="korea">korea</span></a>
             </div>
             <div class="mobile-nav">
-            <div class="mobile-nav-left">
-                <span class="explore-wrapper">
+                <div class="mobile-nav-left">
+                    <span class="explore-wrapper">
                     <div class="explore-logo"></div>
                     <a href="product.html">투자하기</a>    
                 </span>
-            </div>
-            <div class="mobile-nav-right">
-                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-            </div>
+                </div>
+                <div class="mobile-nav-right">
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
             </div>
         </nav>
     </div>
     <div class="mid-content">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item carousel-card0 active" style="background-image: url(image/main_content_00.jpg);">
-                    
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="none">
+            <ol class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="acive"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+                <li data-target="#mycarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-card0 active" style="background-image: url(image/main_content_00.jpg)">
                 </div>
                 <div class="carousel-item carousel-card1">
-                    
                 </div>
                 <div class="carousel-item carousel-card2">
-                    
                 </div>
-                 <div class="carousel-item carousel-card3">
-                    
+                <div class="carousel-item carousel-card3">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="myCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -96,120 +97,112 @@
                     <a href="#" class="second-main-row-button">더 보기</a>
                 </div>
                 <div class="section-container">
-                <section class="second-main-section-card">
-                    <div class="second-main-section-card-upper second-main-upper1">
-                        
-                    </div>
-                    <div class="second-main-section-card-mid">
-                        <div class="second-main-section-card-mid-title">
-                            <p class="bold">CPRmusiq</p>
-                            <p>유명한</p>
+                    <section class="second-main-section-card">
+                        <div class="second-main-section-card-upper second-main-upper1">
                         </div>
-                        <div class="second-main-section-card-mid-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti, in possimus distinctio nulla facilis odio natus vel corporis dolorem laudantium illo labore eaque voluptatem sed quis voluptatibus aspernatur ipsa!</div>
-                    </div>
-                    <div class="second-main-section-card-footer">
-                        <div class="second-main-section-card-footer-location">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <span>경기 광명시</span>
-                        </div>
-                        <div class="second-main-section-card-footer-graph">
-                            <div class="graph-100"></div>
-                            <div class="graph-filled"></div>
-                        </div>
-                        <div class="card-footer-contents">
-                            <div class="card-footer-contents-sofar">
-                                <p class="bold">76%</p>
-                                <p>도달률</p>
+                        <div class="second-main-section-card-mid">
+                            <div class="second-main-section-card-mid-title">
+                                <p class="bold">CPRmusiq</p>
+                                <p>유명한</p>
                             </div>
-                            <div class="card-footer-contents-howMuch">
-                                <p class="bold">7600원</p>
-                                <p>후원 받음</p>   
+                            <div class="second-main-section-card-mid-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti, in possimus distinctio nulla facilis odio natus vel corporis dolorem laudantium illo labore eaque voluptatem sed quis voluptatibus aspernatur ipsa!</div>
+                        </div>
+                        <div class="second-main-section-card-footer">
+                            <div class="second-main-section-card-footer-location">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>경기 광명시</span>
                             </div>
-                            <div class="card-footer-contents-timeLeft">
-                                <p class="bold">40시간</p>
-                                <p>남은 시간</p>   
+                            <div class="second-main-section-card-footer-graph">
+                                <div class="graph-100"></div>
+                                <div class="graph-filled"></div>
                             </div>
-
-                        </div>
-                    </div>
-                </section>
-                <section class="second-main-section-card">
-                    <div class="second-main-section-card-upper second-main-upper2">
-                        
-                    </div>
-                    <div class="second-main-section-card-mid">
-                        <div class="second-main-section-card-mid-title">
-                            <p class="bold">CPRmusiq</p>
-                            <p>유명한</p>
-                        </div>
-                        <div class="second-main-section-card-mid-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti, in possimus distinctio nulla facilis odio natus vel corporis dolorem laudantium illo labore eaque voluptatem sed quis voluptatibus aspernatur ipsa!</div>
-                    </div>
-                    <div class="second-main-section-card-footer">
-                        <div class="second-main-section-card-footer-location">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <span>경기 광명시</span>
-                        </div>
-                        <div class="second-main-section-card-footer-graph">
-                            <div class="graph-100"></div>
-                            <div class="graph-filled"></div>
-                        </div>
-                        <div class="card-footer-contents">
-                            <div class="card-footer-contents-sofar">
-                                <p class="bold">76%</p>
-                                <p>도달률</p>
+                            <div class="card-footer-contents">
+                                <div class="card-footer-contents-sofar">
+                                    <p class="bold">76%</p>
+                                    <p>도달률</p>
+                                </div>
+                                <div class="card-footer-contents-howMuch">
+                                    <p class="bold">7600원</p>
+                                    <p>후원 받음</p>
+                                </div>
+                                <div class="card-footer-contents-timeLeft">
+                                    <p class="bold">40시간</p>
+                                    <p>남은 시간</p>
+                                </div>
                             </div>
-                            <div class="card-footer-contents-howMuch">
-                                <p class="bold">7600원</p>
-                                <p>후원 받음</p>   
-                            </div>
-                            <div class="card-footer-contents-timeLeft">
-                                <p class="bold">40시간</p>
-                                <p>남은 시간</p>   
-                            </div>
-
                         </div>
-                    </div>
-                </section>
-                <section class="second-main-section-card">
-                    <div class="second-main-section-card-upper second-main-upper3">
-                        
-                    </div>
-                    <div class="second-main-section-card-mid">
-                        <div class="second-main-section-card-mid-title">
-                            <p class="bold">CPRmusiq</p>
-                            <p>유명한</p>
+                    </section>
+                    <section class="second-main-section-card">
+                        <div class="second-main-section-card-upper second-main-upper2">
                         </div>
-                        <div class="second-main-section-card-mid-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti, in possimus distinctio nulla facilis odio natus vel corporis dolorem laudantium illo labore eaque voluptatem sed quis voluptatibus aspernatur ipsa!</div>
-                    </div>
-                    <div class="second-main-section-card-footer">
-                        <div class="second-main-section-card-footer-location">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <span>경기 광명시</span>
-                        </div>
-                        <div class="second-main-section-card-footer-graph">
-                            <div class="graph-100"></div>
-                            <div class="graph-filled"></div>
-                        </div>
-                        <div class="card-footer-contents">
-                            <div class="card-footer-contents-sofar">
-                                <p class="bold">76%</p>
-                                <p>도달률</p>
+                        <div class="second-main-section-card-mid">
+                            <div class="second-main-section-card-mid-title">
+                                <p class="bold">CPRmusiq</p>
+                                <p>유명한</p>
                             </div>
-                            <div class="card-footer-contents-howMuch">
-                                <p class="bold">7600원</p>
-                                <p>후원 받음</p>   
-                            </div>
-                            <div class="card-footer-contents-timeLeft">
-                                <p class="bold">40시간</p>
-                                <p>남은 시간</p>   
-                            </div>
-
+                            <div class="second-main-section-card-mid-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti, in possimus distinctio nulla facilis odio natus vel corporis dolorem laudantium illo labore eaque voluptatem sed quis voluptatibus aspernatur ipsa!</div>
                         </div>
-                    </div>
-                </section>
+                        <div class="second-main-section-card-footer">
+                            <div class="second-main-section-card-footer-location">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>경기 광명시</span>
+                            </div>
+                            <div class="second-main-section-card-footer-graph">
+                                <div class="graph-100"></div>
+                                <div class="graph-filled"></div>
+                            </div>
+                            <div class="card-footer-contents">
+                                <div class="card-footer-contents-sofar">
+                                    <p class="bold">76%</p>
+                                    <p>도달률</p>
+                                </div>
+                                <div class="card-footer-contents-howMuch">
+                                    <p class="bold">7600원</p>
+                                    <p>후원 받음</p>
+                                </div>
+                                <div class="card-footer-contents-timeLeft">
+                                    <p class="bold">40시간</p>
+                                    <p>남은 시간</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="second-main-section-card">
+                        <div class="second-main-section-card-upper second-main-upper3">
+                        </div>
+                        <div class="second-main-section-card-mid">
+                            <div class="second-main-section-card-mid-title">
+                                <p class="bold">CPRmusiq</p>
+                                <p>유명한</p>
+                            </div>
+                            <div class="second-main-section-card-mid-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti, in possimus distinctio nulla facilis odio natus vel corporis dolorem laudantium illo labore eaque voluptatem sed quis voluptatibus aspernatur ipsa!</div>
+                        </div>
+                        <div class="second-main-section-card-footer">
+                            <div class="second-main-section-card-footer-location">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>경기 광명시</span>
+                            </div>
+                            <div class="second-main-section-card-footer-graph">
+                                <div class="graph-100"></div>
+                                <div class="graph-filled"></div>
+                            </div>
+                            <div class="card-footer-contents">
+                                <div class="card-footer-contents-sofar">
+                                    <p class="bold">76%</p>
+                                    <p>도달률</p>
+                                </div>
+                                <div class="card-footer-contents-howMuch">
+                                    <p class="bold">7600원</p>
+                                    <p>후원 받음</p>
+                                </div>
+                                <div class="card-footer-contents-timeLeft">
+                                    <p class="bold">40시간</p>
+                                    <p>남은 시간</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-
-
             </div>
             <div class="second-main-section">
                 <div class="second-main-row">
@@ -217,120 +210,112 @@
                     <a href="#" class="second-main-row-button">더 보기</a>
                 </div>
                 <div class="section-container">
-                <section class="second-main-section-card">
-                    <div class="second-main-section-card-upper second-main-upper1">
-                        
-                    </div>
-                    <div class="second-main-section-card-mid">
-                        <div class="second-main-section-card-mid-title">
-                            <p class="bold">CPRmusiq</p>
-                            <p>유명한</p>
+                    <section class="second-main-section-card">
+                        <div class="second-main-section-card-upper second-main-upper1">
                         </div>
-                        <div class="second-main-section-card-mid-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti, in possimus distinctio nulla facilis odio natus vel corporis dolorem laudantium illo labore eaque voluptatem sed quis voluptatibus aspernatur ipsa!</div>
-                    </div>
-                    <div class="second-main-section-card-footer">
-                        <div class="second-main-section-card-footer-location">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <span>경기 광명시</span>
-                        </div>
-                        <div class="second-main-section-card-footer-graph">
-                            <div class="graph-100"></div>
-                            <div class="graph-filled"></div>
-                        </div>
-                        <div class="card-footer-contents">
-                            <div class="card-footer-contents-sofar">
-                                <p class="bold">76%</p>
-                                <p>도달률</p>
+                        <div class="second-main-section-card-mid">
+                            <div class="second-main-section-card-mid-title">
+                                <p class="bold">CPRmusiq</p>
+                                <p>유명한</p>
                             </div>
-                            <div class="card-footer-contents-howMuch">
-                                <p class="bold">7600원</p>
-                                <p>후원 받음</p>   
+                            <div class="second-main-section-card-mid-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti, in possimus distinctio nulla facilis odio natus vel corporis dolorem laudantium illo labore eaque voluptatem sed quis voluptatibus aspernatur ipsa!</div>
+                        </div>
+                        <div class="second-main-section-card-footer">
+                            <div class="second-main-section-card-footer-location">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>경기 광명시</span>
                             </div>
-                            <div class="card-footer-contents-timeLeft">
-                                <p class="bold">40시간</p>
-                                <p>남은 시간</p>   
+                            <div class="second-main-section-card-footer-graph">
+                                <div class="graph-100"></div>
+                                <div class="graph-filled"></div>
                             </div>
-
-                        </div>
-                    </div>
-                </section>
-                <section class="second-main-section-card">
-                    <div class="second-main-section-card-upper second-main-upper2">
-                        
-                    </div>
-                    <div class="second-main-section-card-mid">
-                        <div class="second-main-section-card-mid-title">
-                            <p class="bold">CPRmusiq</p>
-                            <p>유명한</p>
-                        </div>
-                        <div class="second-main-section-card-mid-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti, in possimus distinctio nulla facilis odio natus vel corporis dolorem laudantium illo labore eaque voluptatem sed quis voluptatibus aspernatur ipsa!</div>
-                    </div>
-                    <div class="second-main-section-card-footer">
-                        <div class="second-main-section-card-footer-location">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <span>경기 광명시</span>
-                        </div>
-                        <div class="second-main-section-card-footer-graph">
-                            <div class="graph-100"></div>
-                            <div class="graph-filled"></div>
-                        </div>
-                        <div class="card-footer-contents">
-                            <div class="card-footer-contents-sofar">
-                                <p class="bold">76%</p>
-                                <p>도달률</p>
+                            <div class="card-footer-contents">
+                                <div class="card-footer-contents-sofar">
+                                    <p class="bold">76%</p>
+                                    <p>도달률</p>
+                                </div>
+                                <div class="card-footer-contents-howMuch">
+                                    <p class="bold">7600원</p>
+                                    <p>후원 받음</p>
+                                </div>
+                                <div class="card-footer-contents-timeLeft">
+                                    <p class="bold">40시간</p>
+                                    <p>남은 시간</p>
+                                </div>
                             </div>
-                            <div class="card-footer-contents-howMuch">
-                                <p class="bold">7600원</p>
-                                <p>후원 받음</p>   
-                            </div>
-                            <div class="card-footer-contents-timeLeft">
-                                <p class="bold">40시간</p>
-                                <p>남은 시간</p>   
-                            </div>
-
                         </div>
-                    </div>
-                </section>
-                <section class="second-main-section-card">
-                    <div class="second-main-section-card-upper second-main-upper3">
-                        
-                    </div>
-                    <div class="second-main-section-card-mid">
-                        <div class="second-main-section-card-mid-title">
-                            <p class="bold">CPRmusiq</p>
-                            <p>유명한</p>
+                    </section>
+                    <section class="second-main-section-card">
+                        <div class="second-main-section-card-upper second-main-upper2">
                         </div>
-                        <div class="second-main-section-card-mid-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti, in possimus distinctio nulla facilis odio natus vel corporis dolorem laudantium illo labore eaque voluptatem sed quis voluptatibus aspernatur ipsa!</div>
-                    </div>
-                    <div class="second-main-section-card-footer">
-                        <div class="second-main-section-card-footer-location">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <span>경기 광명시</span>
-                        </div>
-                        <div class="second-main-section-card-footer-graph">
-                            <div class="graph-100"></div>
-                            <div class="graph-filled"></div>
-                        </div>
-                        <div class="card-footer-contents">
-                            <div class="card-footer-contents-sofar">
-                                <p class="bold">76%</p>
-                                <p>도달률</p>
+                        <div class="second-main-section-card-mid">
+                            <div class="second-main-section-card-mid-title">
+                                <p class="bold">CPRmusiq</p>
+                                <p>유명한</p>
                             </div>
-                            <div class="card-footer-contents-howMuch">
-                                <p class="bold">7600원</p>
-                                <p>후원 받음</p>   
-                            </div>
-                            <div class="card-footer-contents-timeLeft">
-                                <p class="bold">40시간</p>
-                                <p>남은 시간</p>   
-                            </div>
-
+                            <div class="second-main-section-card-mid-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti, in possimus distinctio nulla facilis odio natus vel corporis dolorem laudantium illo labore eaque voluptatem sed quis voluptatibus aspernatur ipsa!</div>
                         </div>
-                    </div>
-                </section>
+                        <div class="second-main-section-card-footer">
+                            <div class="second-main-section-card-footer-location">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>경기 광명시</span>
+                            </div>
+                            <div class="second-main-section-card-footer-graph">
+                                <div class="graph-100"></div>
+                                <div class="graph-filled"></div>
+                            </div>
+                            <div class="card-footer-contents">
+                                <div class="card-footer-contents-sofar">
+                                    <p class="bold">76%</p>
+                                    <p>도달률</p>
+                                </div>
+                                <div class="card-footer-contents-howMuch">
+                                    <p class="bold">7600원</p>
+                                    <p>후원 받음</p>
+                                </div>
+                                <div class="card-footer-contents-timeLeft">
+                                    <p class="bold">40시간</p>
+                                    <p>남은 시간</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="second-main-section-card">
+                        <div class="second-main-section-card-upper second-main-upper3">
+                        </div>
+                        <div class="second-main-section-card-mid">
+                            <div class="second-main-section-card-mid-title">
+                                <p class="bold">CPRmusiq</p>
+                                <p>유명한</p>
+                            </div>
+                            <div class="second-main-section-card-mid-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti, in possimus distinctio nulla facilis odio natus vel corporis dolorem laudantium illo labore eaque voluptatem sed quis voluptatibus aspernatur ipsa!</div>
+                        </div>
+                        <div class="second-main-section-card-footer">
+                            <div class="second-main-section-card-footer-location">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>경기 광명시</span>
+                            </div>
+                            <div class="second-main-section-card-footer-graph">
+                                <div class="graph-100"></div>
+                                <div class="graph-filled"></div>
+                            </div>
+                            <div class="card-footer-contents">
+                                <div class="card-footer-contents-sofar">
+                                    <p class="bold">76%</p>
+                                    <p>도달률</p>
+                                </div>
+                                <div class="card-footer-contents-howMuch">
+                                    <p class="bold">7600원</p>
+                                    <p>후원 받음</p>
+                                </div>
+                                <div class="card-footer-contents-timeLeft">
+                                    <p class="bold">40시간</p>
+                                    <p>남은 시간</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -422,9 +407,9 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="jquery-3.1.0.slim.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
 </body>
 
 </html>
