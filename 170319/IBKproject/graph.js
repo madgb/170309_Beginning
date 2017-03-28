@@ -1,25 +1,91 @@
-/* Inspired by : http://codepen.io/obc/pen/ypDmg */
-/* Te iubesc pisoi */
-/* @_tomesch */
-
-// Add values to the values array and see what happens :)
-var values = [250,10000,340,290,200,50,45,85,95,120];
-
-drawChart(values,"#chart",10) // You can adjust the margin between each bar by changing 10 to whatever you like
-
-function drawChart(data,selector,padding){
-  var max = Math.max.apply(Math, data);
-	var chart = document.querySelector(selector);
-	var barwidth = ((chart.offsetWidth-(values.length-1)*padding-(data.length)*10)/data.length);
-	var sum = data.reduce(function(pv, cv) { return pv + cv; }, 0);
-	var left = 0;
-	for (var i in data){
-	  var newbar = document.createElement('div');
-	  newbar.setAttribute("class", "bar");
-	  newbar.style.width=barwidth+"px";
-	  newbar.style.height=((data[i]/max)*100)+"%";
-	  newbar.style.left=left+"px";
-	  chart.appendChild(newbar);
-	  left += (barwidth+padding+10);
-	}
+function sliceSize(dataNum, dataTotal) {
+    return (dataNum / dataTotal) * 360;
 }
+
+function addSlice(id, sliceSize, pieElement, offset, sliceID, color) {
+    $(pieElement).append("<div class='slice " + sliceID + "'><span></span></div>");
+    var offset = offset - 1;
+    var sizeRotation = -179 + sliceSize;
+
+    $(id + " ." + sliceID).css({
+        "transform": "rotate(" + offset + "deg) translate3d(0,0,0)"
+    });
+
+    $(id + " ." + sliceID + " span").css({
+        "transform": "rotate(" + sizeRotation + "deg) translate3d(0,0,0)",
+        "background-color": color
+    });
+}
+
+function iterateSlices(id, sliceSize, pieElement, offset, dataCount, sliceCount, color) {
+    var
+        maxSize = 179,
+        sliceID = "s" + dataCount + "-" + sliceCount;
+
+    if (sliceSize <= maxSize) {
+        addSlice(id, sliceSize, pieElement, offset, sliceID, color);
+    } else {
+        addSlice(id, maxSize, pieElement, offset, sliceID, color);
+        iterateSlices(id, sliceSize - maxSize, pieElement, offset + maxSize, dataCount, sliceCount + 1, color);
+    }
+}
+
+function createPie(id) {
+    var
+        listData = [],
+        listTotal = 0,
+        offset = 0,
+        i = 0,
+        pieElement = id + " .pie-chart__pie"
+    dataElement = id + " .pie-chart__legend"
+
+    color = [
+        "cornflowerblue",
+        "olivedrab",
+        "orange",
+        "tomato",
+        "crimson",
+        "purple",
+        "turquoise",
+        "forestgreen",
+        "navy"
+    ];
+
+    color = shuffle(color);
+
+    $(dataElement + " span").each(function() {
+        listData.push(Number($(this).html()));
+    });
+
+    for (i = 0; i < listData.length; i++) {
+        listTotal += listData[i];
+    }
+
+    for (i = 0; i < listData.length; i++) {
+        var size = sliceSize(listData[i], listTotal);
+        iterateSlices(id, size, pieElement, offset, i, 0, color[i]);
+        $(dataElement + " li:nth-child(" + (i + 1) + ")").css("border-color", color[i]);
+        offset += size;
+    }
+}
+
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length; i; i--) {
+        j = Math.floor(Math.random() * i);
+        x = a[i - 1];
+        a[i - 1] = a[j];
+        a[j] = x;
+    }
+
+    return a;
+}
+
+function createPieCharts() {
+    createPie('.pieID--micro-skills');
+    createPie('.pieID--categories');
+    createPie('.pieID--operations');
+}
+
+createPieCharts();
+

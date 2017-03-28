@@ -22,6 +22,7 @@
 
 .mid-wrap {
     padding-top: 4rem;
+    height: 500px;
 }
 
 .row-left,
@@ -86,6 +87,10 @@
     background-color: #2BDE73;
     border: 1px solid #00A812;
     border-radius: 3px;
+}
+
+.under-wrap{
+    height: 400px;
 }
 
 .favorite-fund,

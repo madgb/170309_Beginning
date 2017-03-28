@@ -98,12 +98,42 @@
                 </div>
             </div>
         </div>
-        <div class="under-wrap clearfix">
-            <div class="wrapper">
-  <h1>Dynamically generated 3D bar chart</h1>
-  <p>Add values to the javascript array to edit the chart</p>
-  <div id="chart"></div>  
-</div>
+        <div class="graph-wrapper">
+            <h2 class="graph-h1">투자 현황</h1>
+            <div class="pie-charts">
+                <div class="pieID--micro-skills pie-chart--wrapper">
+                    <h3>목표 도달</h3>
+                    <div class="pie-chart">
+                        <div class="pie-chart__pie"></div>
+                        <ul class="pie-chart__legend">
+                            <li><em>소액 투자자</em><span>642</span></li>
+                            <li><em>고액 투자자</em><span>358</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pieID--categories pie-chart--wrapper">
+                    <h3>신규 투자 정도</h3>
+                    <div class="pie-chart">
+                        <div class="pie-chart__pie"></div>
+                        <ul class="pie-chart__legend">
+                            <li><em>신규 투자</em><span>768</span></li>
+                            <li><em>기존 투자</em><span>232</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pieID--operations pie-chart--wrapper">
+                    <h3>긍정/부정 기대</h3>
+                    <div class="pie-chart">
+                        <div class="pie-chart__pie"></div>
+                        <ul class="pie-chart__legend">
+                            <li><em>강한 기대</em><span>486</span></li>
+                            <li><em>적당한 기대</em><span>156</span></li>
+                            <li><em>기대하지 않음</em><span>215</span></li>
+                            <li><em>별로일 것</em><span>143</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <footer>
@@ -195,8 +225,7 @@
         </div>
     </footer>
     <script type="text/javascript" src="jquery-3.1.0.slim.min.js"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script type="text/javascript" src="bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="graph.js"></script>
