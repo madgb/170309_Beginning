@@ -214,6 +214,18 @@ ul, li{
 	background-image: url(http://barcodedc.com/wp-content/gallery/food/healthfitnessrevolution-com.jpg);
 }
 
+.second-main-below1{
+	background-image: url(http://kingofwallpapers.com/artwork/artwork-007.jpg);
+}
+
+.second-main-below2{
+	background-image: url(https://www.lulzbot.com/sites/default/files/TAZ_6_Angle_Main_Product_Page.png);
+}
+
+.second-main-below3{
+	background-image: url(http://blog.edisonnation.com/wp-content/uploads/2014/09/Flat-Iron-CP.png);
+}
+
 
 .second-main-section-card-mid-title{
 	padding: 10px 0;
@@ -248,10 +260,20 @@ ul, li{
 
 .graph-filled{
 	position: absolute;
-	width: 76%;
 	background-color: #45C63F;
     border-radius: 6px;
     height: 6px;
+}
+
+.filled76{width: 76%;}
+.filled54{width: 54%;}
+.filled12{width: 12%;}
+.filled91{width: 91%;}
+.filled85{width: 85%;}
+.filled12{width: 12%;}
+
+.minus50{
+	background-color: #CC000C;
 }
 
 .card-footer-contents > div{
