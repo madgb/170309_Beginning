@@ -1,6 +1,6 @@
 # 170309_Beginning
 
-####of the
+#### of the
 
 ### Studying Front-End Engineering
 
@@ -8,18 +8,18 @@
 ---
 
 
-####Goal
+#### Goal
 * Becoming A useful engineer
 * Before April, 2018
 * At least 5 updates a week
 
-####With
+#### With
 * Github, SourceTree
 * codepen, markdown language
 * Sublime Text
 * Atom
 
-####What
+#### What
 * Html5, CSS3, Javascript
 * JQuery
 * Angular JS
